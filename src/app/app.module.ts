@@ -4,9 +4,11 @@ import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { ApiService } from './shared';
+import { HomeComponent } from './home.component';
+import { ReadComponent } from './read/read.component';
+import { ReadingComponent } from './reading/reading.component';
+import { ToReadComponent } from './toread/toread.component';
+import { ReadRecommandComponent } from "./recommand/recommand.component";
 import { routing } from './app.routing';
 
 import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
@@ -21,10 +23,12 @@ import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    ReadComponent,
+    ReadingComponent,
+    ToReadComponent,
+    ReadRecommandComponent
   ],
   providers: [
-    ApiService
   ],
   bootstrap: [AppComponent]
 })
