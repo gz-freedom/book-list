@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { AppService } from './app.service';
 
 @Component({
-  selector: 'book-list',
+  selector: 'app-root',
   templateUrl: './app.component.html',
-  providers: [AppService]
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent {}
+export class AppComponent {
+  title = 'app works!';
+}
